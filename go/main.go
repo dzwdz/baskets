@@ -14,7 +14,7 @@ func main() {
 	}
 	fmt.Printf("bk = %x\n", kg.BaseKey)
 
-	sk, err := kg.SiteKey("lichess")
+	sk, err := kg.SiteKey("dzwdz@lichess")
 	if err != nil {
 		panic(err)
 	}
@@ -26,7 +26,7 @@ func main() {
 	}
 	fmt.Printf("sk = %x\n", sk)
 
-	sk, err = kg.SiteKey("lichess")
+	sk, err = kg.SiteKey("dzwdz@lichess")
 	if err != nil {
 		panic(err)
 	}

@@ -34,6 +34,8 @@ func emulateDeviceRaw(service []byte) []byte {
 }
 
 func (dev EmuDevice) GetKey(service string) ([]byte, error) {
+	// TODO do some caching, so you don't have to repress the button on incorrect passwords
+	// lowkey a security issue because of the mitm possibility
 	res := emulateDeviceRaw([]byte(service))
 	if len(res) != 64 {
 		return nil, errors.New("invalid device response")

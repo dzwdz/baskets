@@ -1,0 +1,9 @@
+{
+	"header": {
+		"scrypt": [1024, 8, 1],
+		"devKeyChecksum": 2533582951,
+		"baseKeyChecksum": 3391240226
+	},
+	"site": "dzwdz@lichess",
+	"offset": "0"
+}
